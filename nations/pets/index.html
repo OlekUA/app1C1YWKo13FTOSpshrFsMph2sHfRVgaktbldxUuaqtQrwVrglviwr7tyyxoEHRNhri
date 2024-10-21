@@ -9,7 +9,15 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <style>
-        /* Set the background image */
+        /* Load the custom font */
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('font.woff') format('woff'); /* Ensure the font.woff file is in the same directory */
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Set the background image and style the body */
         body {
             background-image: url('background.jpg'); /* Replace with your image file name */
             background-size: cover; /* Make the image cover the entire background */
@@ -19,16 +27,23 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family: 'CustomFont', sans-serif; /* Apply the custom font */
             color: green;
             font-weight: bold;
             font-size: 24px;
+        }
+
+        /* Make sure to preserve ASCII art formatting */
+        pre {
+            white-space: pre;
         }
     </style>
 </head>
 <body>
     <div>
+        <pre>
 This is a secret part of the
- Terminal Of Nations Network.
+Terminal Of Nations Network.
 
 
 This is Baxter.
@@ -42,7 +57,7 @@ This is Baxter.
  _| | |  | | |_
 "---|_|--|_|---"
 
-
+        </pre>
     </div>
 </body>
 </html>
